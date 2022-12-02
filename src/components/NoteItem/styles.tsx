@@ -1,16 +1,18 @@
 import {Insets, StyleSheet, ViewStyle} from 'react-native';
 
 type NoteItemStyles = {
-  rootContainer: ViewStyle;
+  commonNoteContainer: ViewStyle;
   noteContainer: ViewStyle;
   verticalLine: ViewStyle;
   titleText: ViewStyle;
   descriptionText: ViewStyle;
   hitSlop: Insets;
+  deleteButton: ViewStyle;
+  deleteButtonText: ViewStyle;
 };
 
 export const noteItemStyles = StyleSheet.create<NoteItemStyles>({
-  rootContainer: {
+  commonNoteContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -49,5 +51,17 @@ export const noteItemStyles = StyleSheet.create<NoteItemStyles>({
     bottom: 30,
     left: 30,
     right: 30,
+  },
+  deleteButton: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 95,
+    height: 37,
+    backgroundColor: '#E30000',
+    borderRadius: 5,
+    marginRight: '5%',
+  },
+  deleteButtonText: {
+    color: '#FFFFFF',
   },
 });
