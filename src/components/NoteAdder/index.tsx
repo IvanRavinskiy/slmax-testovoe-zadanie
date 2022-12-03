@@ -37,7 +37,10 @@ export const NoteAdder: FC = () => {
           value={description}
           onChangeText={setDescription}
         />
-        <TouchableOpacity onPress={addNote} hitSlop={noteAdderStyles.hitSlop}>
+        <TouchableOpacity
+          style={noteAdderStyles.iconContainer}
+          onPress={addNote}
+          hitSlop={noteAdderStyles.hitSlop}>
           <Icon />
         </TouchableOpacity>
       </View>

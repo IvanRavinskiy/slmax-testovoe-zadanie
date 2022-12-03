@@ -5,6 +5,7 @@ type NoteAdderStyles = {
   horizontalLine: ViewStyle;
   titleInput: ViewStyle;
   descriptionContainer: ViewStyle;
+  iconContainer: ViewStyle;
   descriptionInput: ViewStyle;
   hitSlop: Insets;
 };
@@ -22,6 +23,7 @@ export const noteAdderStyles = StyleSheet.create<NoteAdderStyles>({
     paddingLeft: 17,
     paddingRight: 27,
     paddingVertical: 20,
+    marginBottom: '5%',
   },
   horizontalLine: {
     alignSelf: 'center',
@@ -36,16 +38,21 @@ export const noteAdderStyles = StyleSheet.create<NoteAdderStyles>({
     fontWeight: '600',
     lineHeight: 17,
     paddingLeft: 4,
+    paddingVertical: 0,
   },
   descriptionContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+  },
+  iconContainer: {
+    justifyContent: 'center',
   },
   descriptionInput: {
     fontSize: 10,
     fontWeight: '300',
     lineHeight: 12,
     paddingLeft: 4,
+    paddingVertical: 0,
   },
   hitSlop: {
     top: 30,

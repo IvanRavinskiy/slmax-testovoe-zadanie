@@ -8,6 +8,7 @@ type NoteItemStyles = {
   descriptionText: ViewStyle;
   hitSlop: Insets;
   deleteButton: ViewStyle;
+  deleteButtonTextContainer: ViewStyle;
   deleteButtonText: ViewStyle;
 };
 
@@ -55,11 +56,14 @@ export const noteItemStyles = StyleSheet.create<NoteItemStyles>({
   deleteButton: {
     alignItems: 'center',
     justifyContent: 'center',
-    width: 95,
+    paddingHorizontal: '5%',
     height: 37,
     backgroundColor: '#E30000',
     borderRadius: 5,
     marginRight: '5%',
+  },
+  deleteButtonTextContainer: {
+    position: 'absolute',
   },
   deleteButtonText: {
     color: '#FFFFFF',
